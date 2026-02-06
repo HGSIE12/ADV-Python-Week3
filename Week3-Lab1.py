@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv("/mnt/data/day11_income.csv")
+df = pd.read_csv("day11_income.csv")
 
 def winsorize_series(s, lower_q, upper_q):
     lower = s.quantile(lower_q)
